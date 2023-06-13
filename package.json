@@ -1,0 +1,49 @@
+{
+    "name": "@nevware21/release-tests",
+    "description": "Simple post-release / integration testing",
+    "version": "0.1.0",
+    "homepage": "https://github.com/nevware21/release-tests",
+    "license": "MIT",
+    "author": {
+        "name": "Nevware21",
+        "email": "github@nevware21.com"
+    },
+    "keywords": [
+        "integration tests",
+        "typescript",
+        "ts-utils",
+        "ts-async",
+        "ts-debug",
+        "grunt"
+    ],
+    "sideEffects": false,
+    "scripts": {
+        "build": ""
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nevware21/release-tests.git"
+    },
+    "bugs": {
+        "url": "https://github.com/nevware21/release-tests/issues"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/nevware21/release-tests/blob/main/LICENSE"
+        }
+    ],
+    "engines": {
+        "node": ">= 0.8.0"
+    },
+    "devDependencies": {
+        "@nevware21/grunt-eslint-ts": "^0.2.4",
+        "@nevware21/grunt-ts-plugin": "^0.4.5",
+        "@nevware21/ts-utils": "^0.9.0 <= 2.x",
+        "@nevware21/ts-async": "^0.1.0 <= 2.x",
+        "typescript": "^4.9.5"
+    },
+    "peerDependencies": {
+        "typescript": ">=1"
+    }
+}
