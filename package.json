@@ -18,14 +18,15 @@
     ],
     "sideEffects": false,
     "scripts": {
-        "test-release": "npm run test-ai && npm run test-ai-react",
+        "test-release": "npm run set-config && npm run test-ai && npm run test-ai-react",
         "build": "npm run test-release",
+        "set-config": "git config core.longPaths true",
         "test-ai": "npm run fetch-ai && npm run build-ai",
         "fetch-ai": "git clone https://github.com/microsoft/ApplicationInsights-JS temp/ai-js",
-        "build-ai": "cd temp/ai-js && npm install && npm run rupdate && npm run fullCleanBuild",
+        "build-ai": "cd temp/ai-js && npm install && node common/scripts/install-run-rush.js update --recheck --purge --full && npm run rebuild",
         "test-ai-react": "npm run fetch-ai-react && npm run build-ai-react",
         "fetch-ai-react": "git clone https://github.com/microsoft/applicationinsights-react-js temp/ai-react-js",
-        "build-ai-react": "cd temp/ai-react-js && npm install && npm run rupdate && npm run fullCleanBuild"
+        "build-ai-react": "cd temp/ai-react-js && npm install && node common/scripts/install-run-rush.js update --recheck --purge --full && npm run rebuild"
     },
     "repository": {
         "type": "git",
