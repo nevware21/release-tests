@@ -22,10 +22,10 @@
         "build": "npm run test-release",
         "test-ai": "npm run fetch-ai && npm run build-ai",
         "fetch-ai": "git clone https://github.com/microsoft/ApplicationInsights-JS temp/ai-js",
-        "build-ai": "cd temp/ai-js && npm install && npm run rebuild",
+        "build-ai": "cd temp/ai-js && npm install && npm run rupdate && npm run fullCleanBuild",
         "test-ai-react": "npm run fetch-ai-react && npm run build-ai-react",
         "fetch-ai-react": "git clone https://github.com/microsoft/applicationinsights-react-js temp/ai-react-js",
-        "build-ai-react": "cd temp/ai-react-js && npm install && npm run rebuild"
+        "build-ai-react": "cd temp/ai-react-js && npm install && npm run rupdate && npm run fullCleanBuild"
     },
     "repository": {
         "type": "git",
