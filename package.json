@@ -27,7 +27,7 @@
         "build-ai": "cd temp/ai-js && node common/scripts/install-run-rush.js update --recheck --full && npm install && npm run rebuild",
         "test-ai-react": "npm run fetch-ai-react && npm run build-ai-react",
         "fetch-ai-react": "git clone https://github.com/microsoft/applicationinsights-react-js temp/ai-react-js",
-        "build-ai-react": "cd temp/ai-react-js && node common/scripts/install-run-rush.js update --recheck --full && npm install && npm run rebuild"
+        "build-ai-react": "cd temp/ai-react-js && npm install && npm run rebuild"
     },
     "repository": {
         "type": "git",
